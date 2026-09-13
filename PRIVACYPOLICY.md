@@ -16,7 +16,7 @@ Snoozer (Snoozer) values its users' privacy. This Privacy Policy ("Policy") will
 We reserve the right to make changes to this Policy at any given time. If you want to make sure that you are up to date with the latest changes, we advise you to frequently visit this page. If at any point in time Snoozer decides to make use of any personally identifiable information on file, in a manner vastly different from that which was stated when this information was initially collected, the user or users shall be promptly notified by email. Users at that time shall have the option as to whether to permit the use of their information in this separate manner.
 
 
-This Policy applies to Snoozer, and it governs any and all data collection and usage by us. Through the use of https://www.snoozer.app, you are therefore consenting to the data collection procedures expressed in this Policy.
+This Policy applies to Snoozer, and it governs any and all data collection and usage by us. Through the use of https://www.getsnoozer.com, you are therefore consenting to the data collection procedures expressed in this Policy.
 
 
 Please note that this Policy does not govern the collection and use of information by companies that Snoozer does not control, nor by individuals not employed or managed by us. If you visit a website that we mention or link to, be sure to review its privacy policy before providing the site with information. It is highly recommended and suggested that you review the privacy policies and statements of any website you choose to use or frequent to better understand the way in which websites garner, make use of and share the information collected.
@@ -69,7 +69,7 @@ Use of Information Collected
 Snoozer does not now, nor will it in the future, sell, rent or lease any of its customer lists and/or names to any third parties.
 
 
-Snoozer may collect and may make use of personal information to assist in the operation of our website and to ensure delivery of the services you need and request. At times, we may find it necessary to use personally identifiable information as a means to keep you informed of other possible products and/or services that may be available to you from https://www.snoozer.app.
+Snoozer may collect and may make use of personal information to assist in the operation of our website and to ensure delivery of the services you need and request. At times, we may find it necessary to use personally identifiable information as a means to keep you informed of other possible products and/or services that may be available to you from https://www.getsnoozer.com.
 
 
 Snoozer may also be in contact with you with regards to completing surveys and/or research questionnaires related to your opinion of current or potential future services that may be offered.
@@ -142,4 +142,4 @@ How to Contact Us
 If you have any questions or concerns regarding the Privacy Policy Agreement related to our website, please feel free to contact us at the following email.
 
 
-Email: team@snoozer.app
+Email: team@getsnoozer.com
