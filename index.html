@@ -2304,7 +2304,59 @@
                 <h2 id="text01" style="
   margin-bottom: 3vh;
 ">Privacy</h2>
-                <p id="text02">Your personal data is not collected, used, or shared in any way.</p>
+                <article id="privacy-policy" style="max-width:48rem;margin-top:1rem;margin-bottom:2rem;line-height:1.5;color:#ffffff;position:relative;z-index:2147483647;text-align:left;">
+                  <h2 style="margin-bottom:.25rem;">Snoozer Privacy Policy</h2>
+                  <p style="margin-top:0;margin-bottom:.75rem;font-weight:700;">Last updated: September 13, 2026</p>
+
+                  <p>Snoozer is a Chrome extension that uses your webcam and a locally running face-landmark model to detect when you may be falling asleep while using your browser. Your privacy is important to us. Snoozer does not collect, upload, sell, or share your personal information or webcam data.</p>
+
+                  <h3>What Snoozer Accesses</h3>
+
+                  <h4>Webcam</h4>
+                  <p>Snoozer uses your webcam to detect facial landmarks and determine whether you appear to be falling asleep. The webcam video is processed <strong>locally on your device</strong> using a TensorFlow.js face-landmark model included with the extension. Webcam video, images, face landmarks, and other camera data are <strong>not uploaded to a server, transmitted to us, or stored by Snoozer</strong>.</p>
+                  <p>Snoozer does <strong>not</strong> use facial recognition to identify you or determine your identity; it only uses facial landmarks to detect signs of sleepiness.</p>
+
+                  <h4>Browser Pages</h4>
+                  <p>Snoozer temporarily accesses the active webpage in order to provide its core functionality, such as injecting a meme into the page when the sleepiness threshold is reached. Snoozer does not collect or transmit the contents of webpages, browsing history, passwords, form data, or other personal information from websites.</p>
+
+                  <h4>Extension Storage</h4>
+                  <p>Snoozer uses Chrome's local extension storage to remember user preferences, for example:</p>
+                  <ul>
+                    <li>Sleepiness detection threshold settings</li>
+                    <li>Whether memes are muted</li>
+                    <li>Other settings used to customize the extension</li>
+                  </ul>
+                  <p>These settings are stored locally in your browser and are not transmitted to Snoozer or to any third party.</p>
+
+                  <h4>Information We Collect</h4>
+                  <p>Snoozer does not collect personal information. In particular, Snoozer does not collect or store:</p>
+                  <ul>
+                    <li>Webcam video or photographs</li>
+                    <li>Facial images or biometric identifiers</li>
+                    <li>Facial landmarks</li>
+                    <li>Browsing history or website contents</li>
+                    <li>Passwords, form data, names, email addresses, or location information</li>
+                    <li>User accounts or other identifying information</li>
+                  </ul>
+
+                  <h4>How Data Is Used</h4>
+                  <p>All webcam data is processed locally to determine whether the user appears to be falling asleep. It is <strong>not</strong> used for advertising, profiling, tracking, or identification.</p>
+
+                  <h4>Data Sharing</h4>
+                  <p>Snoozer does not sell, rent, or share user data with third parties. It does not send webcam data, facial landmarks, webpage contents, or stored preferences to external servers.</p>
+
+                  <h4>Third-Party Services</h4>
+                  <p>Snoozer does not use third-party analytics, advertising trackers, or external services to collect user data. The face-landmark model used by Snoozer is bundled with the extension and runs locally on the user's device.</p>
+
+                  <h4>Data Retention and Deletion</h4>
+                  <p>Snoozer does not retain webcam data or facial landmark data. User preferences remain in Chrome's local extension storage until they are changed, cleared, or the extension is removed. Because Snoozer does not maintain a server-side database, there is no server-side personal data to delete.</p>
+
+                  <h4>Changes to This Privacy Policy</h4>
+                  <p>If Snoozer's data practices change, this Privacy Policy will be updated to reflect those changes.</p>
+
+                  <h4>Contact</h4>
+                  <p><strong>Demi Hu</strong><br>bydemihu@gmail.com</p>
+                </article>
                 <ul id="buttons03" style="
   margin-bottom: 2vh;
 " class="buttons">
@@ -2344,6 +2396,27 @@
 
                   <img src="assets/snoozerguy_lineless.svg"></img>
                 </div>
+                <script>
+                  (function () {
+                    function updateSnoozer() {
+                      var el = document.getElementById('snoozerguy');
+                      if (!el) return;
+                      var home = document.getElementById('home-section');
+                      var isHome = home && home.classList.contains('active');
+                      el.style.display = isHome ? '' : 'none';
+                    }
+
+                    document.addEventListener('DOMContentLoaded', updateSnoozer);
+                    window.addEventListener('hashchange', updateSnoozer);
+                    window.addEventListener('load', updateSnoozer);
+                    // Observe section activation changes
+                    var target = document.querySelector('#main > .inner');
+                    if (target && window.MutationObserver) {
+                      new MutationObserver(updateSnoozer).observe(target, { attributes: true, subtree: true, attributeFilter: ['class'] });
+                    }
+                    updateSnoozer();
+                  })();
+                </script>
 
                 <div id="tright" style="
   position: fixed;
