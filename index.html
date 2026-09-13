@@ -2420,6 +2420,32 @@
                   })();
                 </script>
 
+                <script>
+                  // Fallback to ensure direct-hash loads show the correct section
+                  (function () {
+                    function ensureSectionVisible() {
+                      try {
+                        var h = location.hash ? location.hash.replace(/^#/, '') : '';
+                        if (!h) return;
+                        var target = document.getElementById(h + '-section');
+                        if (!target) return;
+                        var sections = document.querySelectorAll('#main > .inner > section');
+                        sections.forEach(function (s) {
+                          if (s === target) {
+                            s.classList.remove('inactive'); s.classList.add('active'); s.style.display = '';
+                          } else {
+                            s.classList.remove('active'); s.classList.add('inactive'); s.style.display = 'none';
+                          }
+                        });
+                      } catch (e) {}
+                    }
+
+                    document.addEventListener('DOMContentLoaded', function () { ensureSectionVisible(); setTimeout(ensureSectionVisible, 50); });
+                    window.addEventListener('load', function () { ensureSectionVisible(); setTimeout(ensureSectionVisible, 150); });
+                    window.addEventListener('hashchange', ensureSectionVisible);
+                  })();
+                </script>
+
                 <div id="tright" style="
   position: fixed;
   right: -7%;
